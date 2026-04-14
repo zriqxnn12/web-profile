@@ -1,22 +1,65 @@
+import HeroImage from "../assets/images/my-profile.jpeg";
+
 const HomePage = () => {
   return (
-    <div className="px-6 py-10">
-      {/* hero section */}
-      <div className="w-64">
-        <p className="text-[#808080] py-1">Hey, I'm Azriqin👋</p>
-        <h1 className="text-4xl font-bold uppercase">
-          <span className="text-[#4E56C0]">Front</span>end Enthusiast
-        </h1>
-        <p className="text-[#808080] text-sm py-2">
-          I’am a frontend developer based in Indonesia, i’ll help you to build
-          beautiful websites your users will love.
-        </p>
-        <div className="mt-2">
-          <button className="bg-[#7980DC] text-white text-sm px-4 py-2 rounded-lg hover:bg-[#6369c2]">
-            View My Work
-          </button>
+    <div className="min-h-screen">
+      <div className="grid grid-cols-1 xl:grid-cols-2 px-5 py-10 lg:py-14 lg:px-10 xl:px-28">
+        <div>
+          <p className="text-[#808080] py-1 text-lg lg:text-xl">
+            Hey, I'm Azriqin👋
+          </p>
+          <h1 className="text-6xl xl:text-7xl font-extrabold tracking-tighter">
+            <span className="text-[#4E56C0]">Front</span>end Developer
+          </h1>
+          <p className="text-[#808080] text-lg lg:text-xl mt-4 leading-5">
+            I’am a junior frontend developer based in Indonesia, i’ll help you
+            to build beautiful websites your users will love.
+          </p>
+          <div className="mt-5">
+            <button className="bg-[#7980DC] text-white text-sm px-4 py-2 md:text-base shadow-lg rounded-lg hover:bg-[#6369c2]">
+              Get in Touch
+            </button>
+          </div>
+        </div>
+        <div className="flex justify-center xl:justify-end">
+          <div className="w-56 h-56 xl:w-80 xl:h-80 mt-14 lg:mt-0 border border-[#9F9D9D] rounded-full content-center">
+            <img
+              src={HeroImage}
+              alt="Profile"
+              className="w-40 h-40 xl:w-56 xl:h-56 mx-auto object-cover rounded-full"
+            />
+          </div>
         </div>
       </div>
+      {/* <div className="px-6 py-10 md:px-12">
+        <div className="md:flex items-center max-w-4xl lg:max-w-6xl xl:max-w-7xl mx-auto">
+          <div className="w-full md:w-1/2">
+            <p className="text-[#808080] py-1 md:text-lg md:py-3 lg:text-xl">
+              Hey, I'm Azriqin👋
+            </p>
+            <h1 className="text-4xl font-extrabold md:text-5xl xl:w-96 lg:text-6xl">
+              <span className="text-[#4E56C0]">Front</span>end Enthusiast
+            </h1>
+            <p className="text-[#808080] text-sm py-2 md:text-lg md:py-4 lg:text-xl">
+              I’am a frontend developer based in Indonesia, i’ll help you to
+              build beautiful websites your users will love.
+            </p>
+            <div className="mt-2">
+              <button className="bg-[#7980DC] text-white text-sm px-4 py-2 md:text-base shadow-lg rounded-lg hover:bg-[#6369c2]">
+                Get in Touch
+              </button>
+            </div>
+          </div>
+
+          <div className="w-56 h-56 xl:w-80 xl:h-80 mt-14 md:mt-0 mx-auto border border-[#9F9D9D] rounded-full content-center">
+            <img
+              src={HeroImage}
+              alt="Profile"
+              className="w-40 h-40 xl:w-56 xl:h-56 mx-auto object-cover rounded-full"
+            />
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 };

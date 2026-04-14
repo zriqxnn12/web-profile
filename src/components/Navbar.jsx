@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     /* Navbar */
     <div className="relative">
-      <div className="px-6 md:px-12 py-6 md:flex justify-between mx-auto">
+      <div className="px-6 md:px-12 py-6 xl:px-28 md:flex justify-between mx-auto">
         <div className="flex items-center gap-4">
           {/* mobile menu button */}
           <a
