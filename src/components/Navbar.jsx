@@ -1,12 +1,29 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    });
+  });
+
+  let scrollActive = scroll
+    ? "bg-white/80 backdrop-blur-sm shadow-md"
+    : "bg-transparent";
 
   return (
     /* Navbar */
     <div className="relative">
-      <div className="px-6 md:px-12 py-6 xl:px-28 md:flex justify-between mx-auto">
+      <div
+        className={`px-6 md:px-12 py-6 xl:px-28 md:flex justify-between fixed left-0 right-0 mx-auto ${scrollActive}`}
+      >
         <div className="flex items-center gap-4">
           {/* mobile menu button */}
           <a
@@ -39,25 +56,6 @@ const Navbar = () => {
               {item}
             </a>
           ))}
-
-          {/* <a
-            href="#"
-            className="uppercase text-lg cursor-pointer hover:text-purple-500"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="uppercase text-lg cursor-pointer hover:text-purple-500"
-          >
-            About
-          </a>
-          <a
-            href="#"
-            className="uppercase text-lg cursor-pointer hover:text-purple-500"
-          >
-            Projects
-          </a> */}
         </div>
 
         {/* mobile menu dropdown */}

@@ -3,7 +3,7 @@ import HeroImage from "../assets/images/my-profile.jpeg";
 const HomePage = () => {
   return (
     <div className="min-h-screen">
-      <div className="grid grid-cols-1 xl:grid-cols-2 px-5 py-10 lg:py-14 lg:px-10 xl:px-28">
+      <div className="grid grid-cols-1 xl:grid-cols-2 px-5 py-24 lg:py-14 lg:px-10 xl:px-28">
         <div>
           <p className="text-[#808080] py-1 text-lg lg:text-xl">
             Hey, I'm Azriqin👋
