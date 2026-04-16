@@ -22,7 +22,7 @@ const Navbar = () => {
     /* Navbar */
     <div className="relative">
       <div
-        className={`px-6 md:px-12 py-6 xl:px-28 md:flex justify-between fixed left-0 right-0 mx-auto ${scrollActive}`}
+        className={`px-5 lg:px-12 py-6 xl:px-28 md:flex justify-between fixed left-0 right-0 mx-auto ${scrollActive}`}
       >
         <div className="flex items-center gap-4">
           {/* mobile menu button */}
