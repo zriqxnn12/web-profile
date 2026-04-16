@@ -3,7 +3,7 @@ import HeroImage from "../assets/images/my-profile.jpeg";
 const HomePage = () => {
   return (
     <div className="min-h-screen">
-      <div className="grid grid-cols-1 xl:grid-cols-2 px-5 py-24 lg:py-14 lg:px-10 xl:px-28">
+      <div className="grid grid-cols-1 xl:grid-cols-2 px-5 py-24 lg:py-28 lg:px-10 xl:px-28 xl:py-36">
         <div>
           <p className="text-[#808080] py-1 text-lg lg:text-xl">
             Hey, I'm Azriqin👋
@@ -30,6 +30,25 @@ const HomePage = () => {
             />
           </div>
         </div>
+      </div>
+
+      <div className="px-5 py-24 lg:px-10 xl:px-28">
+        <h2 className="text-3xl font-bold mb-4 uppercase">About Me</h2>
+        <p className="text-[#808080] text-lg lg:text-xl leading-6">
+          I'm a passionate{" "}
+          <span className="text-[#4E56C0] font-semibold">
+            frontend developer
+          </span>{" "}
+          with a keen eye for design and a love for creating intuitive user
+          experiences. With a strong foundation in HTML, CSS, and JavaScript, I
+          strive to build responsive and accessible websites that not only look
+          great but also perform exceptionally well. <br /> <br />
+          Known for collaborative problem-solving skills and a commitment to
+          continuous learning, I am dedicated to staying up-to-date with the
+          latest industry trends and technologies. Whether working on a team or
+          independently, I am always eager to take on new challenges and
+          contribute to projects that make a positive impact.
+        </p>
       </div>
     </div>
   );
